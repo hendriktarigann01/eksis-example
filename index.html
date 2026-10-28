@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Hendrik</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Supabase Client Library (BaaS Database Modern) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- 1. Header & Navigasi -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Navigasi Utama">
+        <a href="#hero" class="brand">Hendrik Tarigan</a>
+        
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Ganti tema" title="Ganti tema">
+            <i id="theme-icon" class="fa-solid fa-moon"></i>
+          </button>
+          
+          <button id="mobile-toggle" class="mobile-toggle" type="button" aria-label="Buka menu">&#9776;</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <div class="grid-2">
+          <div class="hero-content">
+            <h1>Junior Fullstack Developer</h1>
+            <p>Project portofolio untuk program EKSIS 2026.</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn">Lihat Project</a>
+              <a href="#contact" class="btn-link">Kirim Pesan &rarr;</a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="assets/img/profile.webp" alt="Foto Profil Hendrik Tarigan" width="260" height="325" class="portrait-img" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Tentang Saya -->
+    <section id="about">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <div class="grid-2">
+          <div>
+            <p>
+              Saya adalah mahasiswa Program Studi Sistem Informasi. Minat saya berakar pada titik temu antara proses bisnis dan rekayasa perangkat lunak modern.
+            </p>
+            <p>
+              Melalui program EKSIS, kita membangun fondasi web secara runtut: menyusun struktur semantik HTML5, menata tampilan responsif dengan CSS modern, menambahkan logika interaktif via JavaScript, serta menghubungkan data form langsung ke cloud database Supabase dan publikasi ke Vercel.
+            </p>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:1.25rem;">
+            <div>
+              <strong style="display:block; font-size:0.8rem; color:var(--muted); text-transform:uppercase;">Program Studi</strong>
+              <span style="font-size:1.1rem; font-weight:600;">Sistem Informasi</span>
+            </div>
+            <div>
+              <strong style="display:block; font-size:0.8rem; color:var(--muted); text-transform:uppercase;">Fokus Studi</strong>
+              <span style="font-size:1.1rem; font-weight:600;">Fullstack Web &amp; Cloud Database</span>
+            </div>
+            <div>
+              <strong style="display:block; font-size:0.8rem; color:var(--muted); text-transform:uppercase;">Program</strong>
+              <span style="font-size:1.1rem; font-weight:600;">EKSIS 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Keahlian & Perkakas -->
+    <section id="skills" class="section-alt">
+      <div class="container">
+        <h2>Keahlian &amp; Perkakas</h2>
+        <div>
+          <div class="skill-row">
+            <strong>Frontend</strong>
+            <span>HTML5 Semantik, CSS3 Modern, Flexbox, Responsive Design, Vanilla JavaScript (DOM &amp; Web Storage).</span>
+          </div>
+          <div class="skill-row">
+            <strong>Cloud Backend &amp; DB</strong>
+            <span>Supabase (PostgreSQL Cloud, Row Level Security, Realtime REST API).</span>
+          </div>
+          <div class="skill-row" style="margin-bottom:0;">
+            <strong>Workflow &amp; CI/CD</strong>
+            <span>Git, GitHub, Vercel Deployment, AI-Assisted Prompting &amp; Code Review.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Project Pilihan -->
+    <section id="projects">
+      <div class="container">
+        <h2>Project Pilihan</h2>
+        <div>
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem; font-weight:700;">
+              <h3>Portofolio Pribadi Modern Fullstack</h3>
+              <span style="font-size:0.85rem; color:var(--muted); font-weight:400;">Project EKSIS</span>
+            </div>
+            <p>
+              Website portofolio yang dilengkapi fitur dark mode persisten, formulir kontak terhubung langsung ke database Supabase secara asinkron (AJAX/Fetch), dan dideploy otomatis via Vercel.
+            </p>
+            <div style="margin-top:0.75rem;">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Vercel</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem; font-weight:700;">
+              <h3>Sistem Inventaris Lab Komputer</h3>
+              <span style="font-size:0.85rem; color:var(--muted); font-weight:400;">Konsep Sistem</span>
+            </div>
+            <p>
+              Desain alur pencatatan aset perangkat keras laboratorium kampus, mengelompokkan kondisi perangkat, dan mencatat jadwal pemeliharaan berkala.
+            </p>
+            <div style="margin-top:0.75rem;">
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Desain Relasional</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem; font-weight:700;">
+              <h3>Kalkulator Perencanaan Studi</h3>
+              <span style="font-size:0.85rem; color:var(--muted); font-weight:400;">Eksplorasi Frontend</span>
+            </div>
+            <p>
+              Alat bantu interaktif berbasis JavaScript untuk memperkirakan alokasi anggaran semester, pembelian referensi buku, dan biaya operasional perkuliahan.
+            </p>
+            <div style="margin-top:0.75rem;">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS Flexbox</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Kontak -->
+    <section id="contact" class="section-alt">
+      <div class="container">
+        <h2>Kontak</h2>
+
+        <!-- Alert Notifikasi Interaktif -->
+        <div id="contact-alert" class="alert" style="display: none;" role="alert">
+          <span id="contact-alert-text"></span>
+          <button id="close-alert" class="alert-close" type="button" aria-label="Tutup notifikasi">&times;</button>
+        </div>
+
+        <div class="grid-2">
+          <!-- Formulir -->
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Contoh: Budi Santoso" 
+                required 
+                maxlength="100"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="nama@domain.com" 
+                required 
+                maxlength="100"
+              >
+            </div>
+
+            <div class="form-group">
+              <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                <label for="message">Isi Pesan</label>
+                <span id="char-count" style="font-size:0.8rem; color:var(--muted);">0 / 1000</span>
+              </div>
+              <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Tuliskan pesan atau tanggapan kamu..." 
+                rows="4" 
+                required 
+                maxlength="1000"
+              ></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn" style="width:100%;">Kirim Pesan</button>
+          </form>
+
+          <!-- Daftar Pesan Pengunjung -->
+          <div id="guestbook">
+            <h3 style="margin-bottom:0.35rem;">Pesan Terbaru</h3>
+            <p style="font-size:0.85rem; margin-bottom:1.25rem;">
+              Terhubung ke Supabase Cloud. Alamat email disamarkan demi privasi data.
+            </p>
+
+            <div class="message-list" id="message-list">
+              <p style="font-style:italic; color:var(--muted);">Memuat pesan...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <strong>Hendrik Tarigan</strong> Program EKSIS 2026
+        </div>
+        <div class="footer-links">
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#hero" style="text-decoration: underline;">Kembali ke Atas</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

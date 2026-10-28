@@ -1,0 +1,22 @@
+# Mentor & Internal Course Materials
+docs/
+slides/
+scripts/
+
+# Environment Variables & Secrets
+.env
+.env*.local
+
+# Legacy local configurations
+config.php
+
+# Editor & Operating System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Cache, logs & deployment artifacts
+.vercel/
+.taste-skill/
+*.log
